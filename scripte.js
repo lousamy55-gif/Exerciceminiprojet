@@ -8,6 +8,7 @@ let ordi = 0;
 //différents choix possibles
 function choixOrdi() {
     const options = ["pierre", "feuille", "ciseaux"];
+// randomizer 
     return options[Math.floor(Math.random() * 3)];
 }
 //vérifier qui à gagné (+égalitée possible)
@@ -51,4 +52,5 @@ boutons.forEach(btn => {
 function desactiverJeu() {
     boutons.forEach(b => b.disabled = true);
 }
+
 
